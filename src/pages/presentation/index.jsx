@@ -11,7 +11,7 @@ export function Presentation() {
   return (
     <Container>
       <PerfilSpace>
-        <div>
+        <div data-aos="fade-right" data-aos-delay="160" data-aos-duration="900">
           <h1>STEFANY DE OLIVEIRA</h1>
           <span>CREFI 011481-G/MS</span>
           <p>

@@ -6,6 +6,9 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 export default function Contact() {
+  const handleGenderChange = (event) => {
+    setGender(event.target.value);
+  };
   return (
     <Container>
       <SpaceContact>
@@ -22,7 +25,7 @@ export default function Contact() {
             <Form.Label>Duvidas ou Solicitações</Form.Label>
             <Form.Control as="textarea" rows={3} />
           </Form.Group>
-          <Button label="ENVIAR" />
+          <Button label="ENVIAR"/>
         </Form>
         <WebPages>
           <div>

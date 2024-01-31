@@ -1,8 +1,6 @@
 import React from "react";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import TaskAltIcon from "@mui/icons-material/TaskAlt";
 import { PlanSpace, Text } from "./style";
@@ -25,6 +23,10 @@ export default function PlanClass() {
             alignItems: "center",
             justifyItems: "center",
           }}
+          data-aos="flip-left"
+          data-aos-offset="200"
+          data-aos-delay="200"
+          data-aos-duration="1000"
         >
           <CardContent>
             <Typography
@@ -55,7 +57,7 @@ export default function PlanClass() {
                   backgroundColor: "#B3717B",
                   color: "white",
                   height: "10vh",
-                  width: "5vw",
+                  minWidth: "5vw",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -90,6 +92,10 @@ export default function PlanClass() {
             alignItems: "center",
             justifyItems: "center",
           }}
+          data-aos="flip-left"
+          data-aos-offset="200"
+          data-aos-delay="100"
+          data-aos-duration="1000"
         >
           <CardContent>
             <Typography
@@ -120,7 +126,7 @@ export default function PlanClass() {
                   backgroundColor: "#B3717B",
                   color: "white",
                   height: "10vh",
-                  width: "5vw",
+                  minWidth: "5vw",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -155,6 +161,10 @@ export default function PlanClass() {
             alignItems: "center",
             justifyItems: "center",
           }}
+          data-aos="flip-left"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
         >
           <CardContent>
             <Typography
@@ -185,7 +195,7 @@ export default function PlanClass() {
                   backgroundColor: "#B3717B",
                   color: "white",
                   height: "10vh",
-                  width: "5vw",
+                  minWidth: "5vw",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",

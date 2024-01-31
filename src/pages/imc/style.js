@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const ImcSpace = styled.header`
+  z-index: 10000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,7 +33,7 @@ export const Text = styled.div`
   width: 22rem;
   display: flex;
   flex-direction: column;
-margin-bottom: 2em;
+  margin-bottom: 2em;
   span {
     color: #b3717b;
     font-weight: bold;

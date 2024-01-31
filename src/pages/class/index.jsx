@@ -16,11 +16,16 @@ export default function Class() {
         <span>Aulas pensadas para cada corpo</span>
       </Text>
       <Container style={{ display: "flex", justifyContent: "space-evenly" }}>
-        <Card sx={{ maxWidth: 300 }}>
+        <Card
+          sx={{ maxWidth: 300 }}
+          data-aos="fade-right"
+          data-aos-delay="100"
+          data-aos-duration="600"
+        >
           <CardActionArea>
             <CardMedia
               component="img"
-              height="150"
+              height="190"
               image={imgCard}
               alt="green iguana"
             />
@@ -46,7 +51,12 @@ export default function Class() {
             </CardContent>
           </CardActionArea>
         </Card>
-        <Card sx={{ maxWidth: 300 }}>
+        <Card
+          sx={{ maxWidth: 300 }}
+          data-aos="fade-right"
+          data-aos-delay="160"
+          data-aos-duration="900"
+        >
           <CardActionArea>
             <CardMedia
               component="img"
@@ -75,7 +85,12 @@ export default function Class() {
             </CardContent>
           </CardActionArea>
         </Card>
-        <Card sx={{ maxWidth: 300 }}>
+        <Card
+          sx={{ maxWidth: 300 }}
+          data-aos="fade-right"
+          data-aos-delay="110"
+          data-aos-duration="1000"
+        >
           <CardActionArea>
             <CardMedia
               component="img"
