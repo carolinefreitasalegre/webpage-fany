@@ -3,12 +3,14 @@ import styled from "styled-components";
 export const PerfilSpace = styled.div`
   img {
     width: 25rem;
+    max-width: 25rem;
   }
-  height: 70vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   justify-content: space-between;
+  
   div {
     display: flex;
     align-items: flex-start;

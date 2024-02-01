@@ -34,6 +34,7 @@ export default function Imc() {
         alt="personal image"
         style={{
           width: "30em",
+          opacity: '0.5',
           position: "absolute",
           bottom: 0,
           left: "20em",

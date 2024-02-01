@@ -25,15 +25,19 @@ export default function Contact() {
             <Form.Label>Duvidas ou Solicitações</Form.Label>
             <Form.Control as="textarea" rows={3} />
           </Form.Group>
-          <Button label="ENVIAR"/>
+          <Button label="ENVIAR" />
         </Form>
-        <WebPages>
+        <WebPages
+          data-aos="fade-right"
+          data-aos-delay="160"
+          data-aos-duration="900"
+        >
           <div>
-            <InstagramIcon style={{ fontSize: 30, color: "#b3717b" }} />
+            <InstagramIcon style={{ fontSize: 30 }} />
             Instagram
           </div>
           <div>
-            <WhatsAppIcon style={{ fontSize: 30, color: "#b3717b" }} />
+            <WhatsAppIcon style={{ fontSize: 30  }} />
             Whatsapp
           </div>
         </WebPages>

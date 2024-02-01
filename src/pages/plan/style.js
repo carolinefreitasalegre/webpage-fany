@@ -2,7 +2,7 @@ import styled from "styled-components";
 import BackImage from "../../assets/backimage02.png";
 
 export const PlanSpace = styled.div`
-  min-height: 87vh;
+  min-height: 100vh;
   padding: 0em 1rem;
   background-color: white,;
   display: flex;
@@ -17,7 +17,7 @@ export const PlanSpace = styled.div`
     top: 1;
     left: 0;
     width: 100%;
-    height: 50vh;
+    height: 65vh;
     margin-top: -18em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
     background-image: url(${BackImage});

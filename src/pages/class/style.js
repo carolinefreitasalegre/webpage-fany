@@ -2,7 +2,7 @@ import styled from "styled-components";
 import BackImage from "../../assets/backimage.png";
 
 export const ClassSpace = styled.div`
-  min-height: 90vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;

@@ -10,8 +10,14 @@ export default function Header() {
       <HeaderSpace>
         <img src={Logo} alt="logo" />
         <span>
-          <WhatsAppIcon color="secondary" />
-          67 9 9129-9504
+          <a
+            class="whatsapp-link"
+            color="#b3717b"
+            href="https://web.whatsapp.com/send?phone=5567991299504"
+            target="_blank"
+          >
+            <WhatsAppIcon color="secondary" />
+          </a>
         </span>
       </HeaderSpace>
     </Container>

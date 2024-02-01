@@ -2,13 +2,12 @@ import styled from "styled-components";
 import BackImage from "../../assets/backimage.png";
 
 export const HomeSpace = styled.div`
-  min-height: 90vh;
+  min-height: 95vh;
   padding: 0em 1rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 
   &::before {
     content: "";
@@ -16,9 +15,10 @@ export const HomeSpace = styled.div`
     top: 20;
     left: 0;
     width: 100%;
+    max-width: 100%;
     height: 90vh;
     background-image: url(${BackImage});
-    background-size: 100%;
+    background-size: 110%;
     background-position: center;
     background-attachment: fixed;
     opacity: 0.5;
