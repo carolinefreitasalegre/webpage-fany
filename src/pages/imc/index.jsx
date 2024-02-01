@@ -38,7 +38,7 @@ export default function Imc() {
           bottom: 0,
           left: "20em",
         }}
-        S
+        
       />
       <ImcSpace>
         <Text>

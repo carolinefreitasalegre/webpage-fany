@@ -2,7 +2,7 @@ import styled from "styled-components";
 import BackImage from "../../assets/backimage.png";
 
 export const HomeSpace = styled.div`
-  min-height: 80vh;
+  min-height: 90vh;
   padding: 0em 1rem;
   display: flex;
   justify-content: center;
@@ -16,13 +16,13 @@ export const HomeSpace = styled.div`
     top: 20;
     left: 0;
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     background-image: url(${BackImage});
-    background-size: cover; 
-    background-position: center; 
+    background-size: 100%;
+    background-position: center;
     background-attachment: fixed;
-    opacity: 0.7; 
-    z-index: -1; 
+    opacity: 0.5;
+    z-index: -1;
   }
   img {
     width: 5em;
@@ -51,12 +51,11 @@ export const HomeSpace = styled.div`
     align-items: center;
     gap: 5px;
     color: #b3717b;
-    color: white;
+    color: black;
+    text-shadow: 2px 2px 10px #b3717b;
     font-size: 3rem;
     font-weight: bold;
-    justify-content: center
-
-    svg {
+    justify-content: center svg {
       color: #b3717b;
     }
     span {

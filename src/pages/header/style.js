@@ -8,8 +8,7 @@ export const HeaderSpace = styled.header`
   justify-content: space-between;
   align-items: center;
   img {
-    margin-top: 1em;
-    width: 5em;
+    width: 4em;
   }
   span {
     display: flex;

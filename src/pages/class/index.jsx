@@ -60,7 +60,7 @@ export default function Class() {
           <CardActionArea>
             <CardMedia
               component="img"
-              height="150"
+              height="190"
               image={imgCard}
               alt="green iguana"
             />
@@ -94,7 +94,7 @@ export default function Class() {
           <CardActionArea>
             <CardMedia
               component="img"
-              height="150"
+              height="190"
               image={imgCard}
               alt="green iguana"
             />
