@@ -9,10 +9,3 @@ Currently, two official plugins are available:
 # webpage-fany
 
 
-<!-- 
-1 - Adicionar link das redes...
-2 - ajustar ultimo botao
-3 - adicionar email de contado
-4 - fazer responsivo 
-5 - por funcionalidade na tabela imc
- -->

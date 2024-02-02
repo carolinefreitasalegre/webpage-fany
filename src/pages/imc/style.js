@@ -1,6 +1,21 @@
 import styled from "styled-components";
 
-export const ImcSpace = styled.header`
+export const ContainerB = styled.div`
+  background-color: #ececec;
+  @media (max-width: 414px) {
+    height: 10vh;
+    margin: auto;
+    width: 100vw;
+    align-items: center;
+
+    img {
+      position: relative;
+      margin-left: -23em;
+    }
+  }
+`;
+
+export const ImcSpace = styled.div`
   z-index: 10000;
   display: flex;
   align-items: center;
@@ -28,6 +43,12 @@ export const ImcSpace = styled.header`
       font-size: 1em;
     }
   }
+
+  @media (max-width: 414px) {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  }
 `;
 export const Text = styled.div`
   width: 22rem;
@@ -37,5 +58,12 @@ export const Text = styled.div`
   span {
     color: #b3717b;
     font-weight: bold;
+  }
+
+  @media (max-width: 414px) {
+    align-items: flex-start;
+    justify-content: center;
+    width: 80%;
+    padding-left: 2em;
   }
 `;

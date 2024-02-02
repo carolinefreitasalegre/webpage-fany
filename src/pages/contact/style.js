@@ -2,7 +2,6 @@ import styled from "styled-components";
 import BackImage from "../../assets/backimage04.png";
 
 export const Container = styled.div`
-  /* background-color: black; */
   height: 90vh;
   display: flex;
   justify-content: center;
@@ -23,6 +22,14 @@ export const Container = styled.div`
     background-attachment: fixed;
     opacity: 0.5;
     z-index: -1;
+  }
+
+  @media (max-width: 414px) {
+    height: 145vh;
+
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: top;
   }
 `;
 
@@ -54,6 +61,15 @@ export const SpaceContact = styled.div`
       font-size: 1em;
     }
   }
+
+  @media (max-width: 414px) {
+    height: 75vh;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-top: auto;
+    padding-top: 5em;
+  }
 `;
 export const WebPages = styled.div`
   display: flex;
@@ -68,8 +84,13 @@ export const WebPages = styled.div`
     transition: all 0.5s;
     color: black;
 
-    &:hover {
-      color: #b3717b;
+    a {
+      color: black;
+      text-decoration: none;
     }
+  }
+
+  @media (max-width: 414px) {
+    height: 10vh;
   }
 `;

@@ -10,10 +10,10 @@ export default function PlanClass() {
   return (
     <PlanSpace>
       <Text>
-        <h1>TREINOS E AULAS</h1>
-        <span>Aulas pensadas para cada corpo</span>
+        <h1>PLANOS</h1>
+        <span>Planos personalizados</span>
       </Text>
-      <Container style={{ display: "flex", justifyContent: "space-evenly" }}>
+      <Container className="container" style={{ display: "flex", justifyContent: "space-evenly" }}>
         <Card
           sx={{ maxWidth: 250, height: 340 }}
           style={{

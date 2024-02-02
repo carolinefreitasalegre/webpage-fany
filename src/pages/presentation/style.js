@@ -2,15 +2,38 @@ import styled from "styled-components";
 
 export const PerfilSpace = styled.div`
   img {
-    width: 25rem;
-    max-width: 25rem;
+    width: 23rem;
+    max-width: 23rem;
   }
   height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   justify-content: space-between;
-  
+
+  @media (max-width: 414px) {
+    height: 70vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+    img {
+      display: none;
+    }
+
+    .divText {
+      align-items: center;
+      text-align: center;
+      padding: 0;
+      width: 100%;
+
+      p {
+        width: 100%;
+      }
+    }
+  }
+
   div {
     display: flex;
     align-items: flex-start;

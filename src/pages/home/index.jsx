@@ -4,7 +4,7 @@ import Button from "../../components/Button";
 
 export default function Home() {
   const handleClick = () =>{
-    alert('clicou')
+    
   }
   return (
     <HomeSpace>

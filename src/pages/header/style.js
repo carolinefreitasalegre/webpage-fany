@@ -8,6 +8,11 @@ export const HeaderSpace = styled.header`
   justify-content: space-between;
   align-items: center;
 
+  @media (max-width: 765px) {
+    svg {
+      color: red;
+  }
+  }
   img {
     margin-top: 1em;
     width: 4em;
@@ -24,11 +29,11 @@ export const HeaderSpace = styled.header`
       gap: 5px;
       color: "#b3717b";
       text-decoration: none;
-
     }
 
     svg {
       color: #b3717b;
+      font-size: 2em;
     }
   }
 `;

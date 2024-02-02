@@ -12,7 +12,7 @@ export default function Contact() {
   return (
     <Container>
       <SpaceContact>
-        <Form className="col-md-3 ">
+        <Form className="col-md-3 " >
           <Form.Group className="mb-3 " controlId="exampleForm.ControlInput1">
             <Form.Label>Nome</Form.Label>
             <Form.Control type="text" placeholder="nome" />
@@ -33,12 +33,28 @@ export default function Contact() {
           data-aos-duration="900"
         >
           <div>
-            <InstagramIcon style={{ fontSize: 30 }} />
+            <a
+              href="https://www.instagram.com/fanyolivveira?igsh=MWRlY3dmazRsc25yOA%3D%3D&utm_source=qr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <InstagramIcon style={{ fontSize: 30, color: "black" }} />
             Instagram
+            </a>
           </div>
           <div>
-            <WhatsAppIcon style={{ fontSize: 30  }} />
-            Whatsapp
+            <a
+              class="whatsapp-link"
+              color="#b3717b"
+              href="https://web.whatsapp.com/send?phone=5567991299504"
+              target="_blank"
+            >
+              <WhatsAppIcon
+                color="secondary"
+                style={{ fontSize: 30, color: "black"}}
+              />
+              Whatsapp
+            </a>
           </div>
         </WebPages>
       </SpaceContact>

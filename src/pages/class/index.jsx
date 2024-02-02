@@ -9,13 +9,14 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 
 export default function Class() {
+
   return (
     <ClassSpace>
       <Text>
         <h1>TREINOS E AULAS</h1>
         <span>Aulas pensadas para cada corpo</span>
       </Text>
-      <Container style={{ display: "flex", justifyContent: "space-evenly" }}>
+      <Container className="container" style={{ display: "flex", justifyContent: "space-evenly" }}>
         <Card
           sx={{ maxWidth: 300 }}
           data-aos="fade-right"
@@ -78,7 +79,7 @@ export default function Class() {
                 MUSCULAÇÃO
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                Destinado a fortalecer e desenvolver os músculosvisando a
+                Destinado a fortalecer e desenvolver os músculos, visando a
                 melhoraria da força, resistência muscular e saúde óssea, sendo
                 acessível a diversos níveis de condicionamento físico.
               </Typography>
