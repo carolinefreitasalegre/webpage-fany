@@ -156,7 +156,7 @@ export default function Imc() {
               </Form>
             </div>
 
-            <button type="submit">Enviar</button>
+            <button type="submit">CALCULAR</button>
           </Form>
         </ImcSpace>
       </Container>
