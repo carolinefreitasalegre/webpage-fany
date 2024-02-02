@@ -8,9 +8,14 @@ export function Presentation() {
   return (
     <Container>
       <PerfilSpace>
-        <div data-aos="fade-right" data-aos-delay="160" data-aos-duration="900" className="divText">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="160"
+          data-aos-duration="900"
+          className="divText"
+        >
           <h1>STEFANY DE OLIVEIRA</h1>
-          <span>CREFI 011481-G/MS</span>
+          <span>CREF 011481-G/MS</span>
           <p>
             Formada em Educação Física com sólida base de conhecimento na área e
             Pós graduada em Personal Trainer e Treinamento Desportivo. <br />
