@@ -1,6 +1,6 @@
 import React from "react";
 import { HeaderSpace } from "./style";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/logo.jpeg";
 import Container from "@mui/material/Container";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 

@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const ContainerB = styled.div`
   background-color: #ececec;
+
+
   @media (max-width: 414px) {
     height: 10vh;
     margin: auto;
@@ -55,6 +57,7 @@ export const Text = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 2em;
+  margin-left: 5em;
   span {
     color: #b3717b;
     font-weight: bold;
@@ -64,6 +67,7 @@ export const Text = styled.div`
     align-items: flex-start;
     justify-content: center;
     width: 80%;
-    padding-left: 2em;
+    padding-left: 0;
+
   }
 `;

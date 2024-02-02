@@ -24,10 +24,39 @@ export default function Imc() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Faça algo com os dados do formulário, por exemplo, envie para um servidor
-    console.log("Dados do formulário:", formData);
+
+    if (formData.nome == "" || formData.peso == "" || formData.altura == "") {
+      alert("Preencha os campos corretamente!");
+    } else {
+      const result = formData.peso / (formData.altura * 2);
+      const imc = (result * 100).toFixed(2);
+
+      if (imc < 15) {
+        alert("Resultado inválido, digite peso e altura corretamente!");
+      }
+
+      if (imc < 18.4) {
+        alert(
+          `Olá ${formData.nome}, seu IMC é ${imc}, e está abaixo do peso mas podemos cuidar disso! 😜`
+        );
+      } else if (imc >= 18.5 && imc <= 25) {
+        alert(
+          `Olá ${formData.nome}, seu IMC é ${imc}, e está dentro da normalidade! Parabéns👌😁`
+        );
+      } else if (imc > 25 && imc <= 30) {
+        alert(
+          `Olá ${formData.nome}, seu IMC é ${imc}, e está um pouco acima do limite. Vamos cuidar disso?! 😜`
+        );
+      } else if (imc > 30) {
+        alert(
+          `Olá ${formData.nome}, seu IMC é ${imc}, e está acima do limite. Mas nao se preocupe, podemos cuidar disso?! 😜`
+        );
+      } else {
+        alert("Preencha os campos corretamente!");
+      }
+    }
   };
-  
+
   return (
     <ContainerB>
       <Container
@@ -41,10 +70,10 @@ export default function Imc() {
           justifyContent: "space-evenly",
           overflow: "hidden",
           position: "relative",
-         
         }}
       >
-        <img className="img"
+        <img
+          className="img"
           src={BackImage}
           alt="personal image"
           style={{
@@ -78,7 +107,8 @@ export default function Imc() {
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput2">
               <Form.Label>Altura</Form.Label>
               <Form.Control
-                type="number"
+                type="text"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
                 placeholder="cm"
                 name="altura"
                 value={formData.altura}
@@ -90,8 +120,9 @@ export default function Imc() {
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput3">
               <Form.Label>Peso</Form.Label>
               <Form.Control
-                type="number"
-                placeholder="kg"
+                type="text"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                placeholder="Kg"
                 name="peso"
                 value={formData.peso}
                 onChange={handleInputChange}
@@ -133,7 +164,4 @@ export default function Imc() {
   );
 }
 
-
-<style>
-  
-</style>
+<style></style>;

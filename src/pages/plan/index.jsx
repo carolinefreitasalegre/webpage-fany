@@ -13,7 +13,7 @@ export default function PlanClass() {
         <h1>PLANOS</h1>
         <span>Planos personalizados</span>
       </Text>
-      <Container className="container" style={{ display: "flex", justifyContent: "space-evenly" }}>
+      <Container className="container" style={{ display: "flex", justifyContent: "space-evenly", zIndex:7 }}>
         <Card
           sx={{ maxWidth: 250, height: 340 }}
           style={{

@@ -16,7 +16,7 @@ export default function app() {
       <Class />
       <PlanClass />
       <Imc />
-      <Contact/>
+      <Contact />
     </>
   );
 }

@@ -6,10 +6,36 @@ export const PlanSpace = styled.div`
   padding: 0em 1rem;
   background-color: white;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%; /* Defina a altura desejada para a imagem de fundo */
+  background-image: url(${BackImage});
+  background-size: 100% 50%; /* Ajuste conforme necessário */
+  background-repeat: no-repeat;
+  background-position: top center;
+  z-index: -1; /* 
+
+
+
+
+
+  /* background-size: 100% 50%;
+  background-position: top center;
+  padding: 0em 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url(${BackImage});
+  background-repeat: no-repeat;
+  background-attachment: local;
+  opacity: 0.5; */
 
   @media (max-width: 414px) {
     min-height: 170vh;
@@ -17,33 +43,18 @@ export const PlanSpace = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-size: 0%; /* Ajuste conforme necessário */
+    background-repeat: no-repeat;
+    background-position: top center;
 
-    img {
+    background-image: {
       display: none;
     }
-
-    .container{
+    .container {
       flex-direction: column;
       height: 150vh;
       padding-left: 3em;
     }
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 1;
-    left: 0;
-    width: 100%;
-    height: 65vh;
-    margin-top: -18em;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-    background-image: url(${BackImage});
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    opacity: 0.7;
-    z-index: -1;
   }
 `;
 export const Text = styled.div`
